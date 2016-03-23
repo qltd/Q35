@@ -1,28 +1,46 @@
 <?php
 /**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package _q
- */
+* The template for displaying the footer.
+*
+* Contains the closing of the #content div and all content after.
+*
+* @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+*
+* @package _q
+*/
 
 ?>
 
-	</div><!-- #content -->
+    </div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_q' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_q' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_q' ), '_q', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+                <div class="row align-justify align-middle">
 
-<?php wp_footer(); ?>
+                    <div class="column small-2">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/q-footer-logo.svg" />
+                    </div>
 
-</body>
+                    <div class="column small-3">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <p>&copy; <?php echo date('Y'); ?> QLTD. All rights reserved.</p>
+                    </div>
+
+                </div>
+        </div><!-- .site-info -->
+    </footer><!-- #colophon -->
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
+    <?php wp_footer(); ?>
+
+    </body>
 </html>

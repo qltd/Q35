@@ -2,16 +2,17 @@
 
 @import "fonts";
 @import "settings";
-@import "foundation";
-@import "q";
+@import "../bower_components/foundation-sites/scss/foundation";
 
 //@import "motion-ui";
 
-//@include foundation-global-styles;
+@include foundation-global-styles;
+
 //@include foundation-grid;
 @include foundation-flex-grid;
 
-// @include foundation-typography;
+@include foundation-typography;
+
 // @include foundation-button;
 // @include foundation-forms;
 // @include foundation-range-input;
@@ -53,3 +54,5 @@
 
 //@include motion-ui-transitions;
 //@include motion-ui-animations;
+
+@import "q";

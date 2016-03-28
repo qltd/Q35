@@ -27,57 +27,57 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="row align-center timeline">
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-one">
+                        <div class="icon align-self-middle"><i class="fa fa-anchor"></i></div>
+                        <div class="year one">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-two">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year two">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-three">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year three">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-four">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year four">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-five">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year five">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
                 </div>
                 <div class="row align-center timeline">
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-six">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year six">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-seven">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year seven">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-eight">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year eight">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-nine">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year nine">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
-                    <div class="column small-2">
-                        icon<br />
-                        year<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque.
+                    <div class="column small-2 entry-ten">
+                        <div class="icon"><i class="fa fa-anchor"></i></div>
+                        <div class="year ten">1981</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
                     </div>
                 </div>
             </div>
@@ -96,6 +96,11 @@ get_header(); ?>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="column">
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -107,7 +112,7 @@ get_header(); ?>
             <div class="column">
                 <div class="row align-center">
                     <div class="column small-6">
-                        <h2>Q Photo History</h2>
+                        <h2>Q Identity History</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
                     </div>
                 </div>
@@ -126,6 +131,122 @@ get_header(); ?>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
                     </div>
                 </div>
+                <div class="row align-center people">
+                    <div class="column small-10">
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                             <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -139,6 +260,123 @@ get_header(); ?>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
                     </div>
                 </div>
+                <div class="row align-center people">
+                    <div class="column small-10">
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                             <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column small-3">
+                                Tamakia Ohman
+                            </div>
+                            <div class="column small-3">
+                                Kellye Patlan
+                            </div>
+                            <div class="column small-3">
+                                Beatris Kravetz
+                            </div>
+                            <div class="column small-3">
+                                Gwenn Bungard
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>

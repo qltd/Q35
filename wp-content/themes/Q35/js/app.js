@@ -5,8 +5,32 @@ timelineDone = false;
 sectionsDone = false;
 peopleDone = false;
 
+function resizeGallery(){
+    $('.slide a').each(function(){
+        var height = $(this).width();
+        $(this).css({'height':height+'px'});
+    })
+}
 
 $(function(){
+
+    resizeGallery();
+    $(window).resize(function(){
+        resizeGallery();
+    });
+
+    $('body').click(function(){
+        $('.overlay.show').hide().removeClass('show').delay(500).show(0);
+    });
+
+    $('.slide a').click(function(){
+        var img = $(this).attr('href');
+        $('.overlay').html('<img src="' + img + '" />');
+        $('.overlay').addClass('show');
+        return false;
+    });
+
+
 
     $(window).scroll(function() {
 

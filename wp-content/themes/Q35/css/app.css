@@ -757,7 +757,39 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .timeline .year.animate:after { width: 100%; }
 
-#gallery { background: #e27f67; color: white; }
+#gallery { background: #e27f67; color: white; padding: 10rem 0 0; }
+
+.overlay { opacity: 0; box-shadow: 0 0 100px rgba(0, 0, 0, 0.9); position: fixed; top: 30%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 99999; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; min-width: 0%; min-height: 0%; }
+
+.overlay img { width: 0; height: 0; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+
+.overlay.show { opacity: 1; top: 50%; min-width: 70%; min-height: 50%; }
+
+.overlay.show img { width: 100%; height: auto; }
+
+.carousel { margin-top: 5rem; }
+
+.slide { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.slide a { -webkit-box-flex: 1; -webkit-flex: 1 0 33%; -ms-flex: 1 0 33%; flex: 1 0 33%; position: relative; overflow: hidden; max-height: 500px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+.slide a:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; z-index: 999; }
+
+.slide a:nth-child(1):before { background: rgba(162, 123, 170, 0.5); }
+
+.slide a:nth-child(2):before { background: rgba(179, 71, 105, 0.5); }
+
+.slide a:nth-child(3):before { background: rgba(218, 86, 132, 0.5); }
+
+.slide a:nth-child(4):before { background: rgba(243, 215, 77, 0.5); }
+
+.slide a:nth-child(5):before { background: rgba(226, 151, 83, 0.5); }
+
+.slide a:nth-child(6):before { background: rgba(220, 75, 85, 0.5); }
+
+.slide a:hover:before { background: transparent; }
+
+.slide a img { max-width: none; }
 
 #alum { background: #41b387; color: white; padding: 8rem 0; }
 

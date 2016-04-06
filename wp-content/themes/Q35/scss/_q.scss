@@ -257,6 +257,38 @@ section {
         display: flex;
         flex-wrap: wrap;
 
+        &:first-child {
+            a {
+                &:nth-child(1):before {
+                    background: rgba(162, 123, 170, 0.5);
+                }
+
+                &:nth-child(2):before {
+                    background: rgba(179, 71, 105, 0.5);
+                }
+
+                &:nth-child(3):before {
+                    background: rgba(218, 86, 132, 0.5);
+                }
+            }
+        }
+
+        &:last-child {
+            a {
+                &:nth-child(1):before {
+                    background: rgba(243, 215, 77, 0.5);
+                }
+
+                &:nth-child(2):before {
+                    background: rgba(226, 151, 83, 0.5);
+                }
+
+                &:nth-child(3):before {
+                    background: rgba(220, 75, 85, 0.5);
+                }
+            }
+        }
+
         a {
             flex-grow: 1;
             flex-shrink: 1;
@@ -283,32 +315,8 @@ section {
                 z-index: 999;
             }
 
-            &:nth-child(1):before {
-                background: rgba(162, 123, 170, 0.5);
-            }
-
-            &:nth-child(2):before {
-                background: rgba(179, 71, 105, 0.5);
-            }
-
-            &:nth-child(3):before {
-                background: rgba(218, 86, 132, 0.5);
-            }
-
-            &:nth-child(4):before {
-                background: rgba(243, 215, 77, 0.5);
-            }
-
-            &:nth-child(5):before {
-                background: rgba(226, 151, 83, 0.5);
-            }
-
-            &:nth-child(6):before {
-                background: rgba(220, 75, 85, 0.5);
-            }
-
             &:hover:before, &.grow:before {
-                background: transparent;
+                background: transparent !important;
             }
 
             img {

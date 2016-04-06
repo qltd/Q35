@@ -691,7 +691,7 @@ header { color: #929292; background: #f1f1f2; padding: 0; height: 666px; margin-
 
 .thirty-five .layer { position: absolute; width: 100%; height: 100%; padding: 0; z-index: 10; top: 0px; }
 
-.thirty-five #layer1 { background: transparent url(../img/35-years-background-vector.svg) repeat top right fixed; background-size: 450px 700px; z-index: 1; }
+.thirty-five #layer1 { background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed; background-size: 450px 700px; z-index: 1; }
 
 .thirty-five #top-layer { border-top: 19rem solid #f1f1f2; border-bottom: 18rem solid #f1f1f2; }
 
@@ -719,7 +719,7 @@ section:first-child { opacity: 1; }
 
 section.animate { opacity: 1; }
 
-section.parallax { background: transparent url(../img/35-years-background-vector.svg) repeat top right fixed; background-size: cover; padding: 3rem 0; }
+section.parallax { background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed; background-size: cover; padding: 3rem 0; }
 
 section h2 { font-size: 9rem; }
 

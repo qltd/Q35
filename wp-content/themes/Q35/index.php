@@ -101,17 +101,17 @@ get_header(); ?>
     <div class="carousel">
         <div class="slide">
 
-            <a href="http://lorempixel.com/1200/700/nature"><img src="http://lorempixel.com/800/700/nature" /></a>
+            <div class="img-row">
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+            </div>
 
-            <a href="http://lorempixel.com/1200/700/city"><img src="http://lorempixel.com/800/700/nature" /></a>
-
-            <a href="http://lorempixel.com/1200/700/nature"><img src="http://lorempixel.com/800/700/nature" /></a>
-
-            <a href="http://lorempixel.com/1200/700/nature"><img src="http://lorempixel.com/800/700/nature" /></a>
-
-            <a href="http://lorempixel.com/1200/700/nature"><img src="http://lorempixel.com/800/700/nature" /></a>
-
-            <a href="http://lorempixel.com/1200/700/nature"><img src="http://lorempixel.com/800/700/nature" /></a>
+            <div class="img-row">
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+            </div>
 
         </div>
     </div>

@@ -6,8 +6,8 @@ sectionsDone = false;
 peopleDone = false;
 
 function resizeGallery(){
-    $('.slide a').each(function(){
-        var height = $(this).width();
+    $('.img-row').each(function(){
+        var height = $(this).width() / 3; // make the height equal to 1 of the columns widths
         $(this).css({'height':height+'px'});
     })
 }
@@ -19,17 +19,16 @@ $(function(){
         resizeGallery();
     });
 
-    $('body').click(function(){
-        $('.overlay.show').hide().removeClass('show').delay(500).show(0);
-    });
 
-    $('.slide a').click(function(){
-        var img = $(this).attr('href');
-        $('.overlay').html('<img src="' + img + '" />');
-        $('.overlay').addClass('show');
+    $(".slide a").on('click', function() {
+        if ($(this).hasClass('grow')){
+            $(".slide a").removeClass("grow");
+        } else {
+            $(".slide a").removeClass("grow");
+            $(this).addClass("grow");
+        }
         return false;
     });
-
 
 
     $(window).scroll(function() {

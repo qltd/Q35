@@ -25,7 +25,7 @@
         </head>
 
         <body <?php body_class(); ?>>
-            <div class="overlay"></div>
+
             <div class="logo-header">
                 <div class="row">
                     <div class="columns align-self-middle">

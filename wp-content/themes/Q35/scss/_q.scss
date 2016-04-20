@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo {
-    background: url(../img/low-res-logo.jpg) no-repeat top left;
+    background: url(../img/Q.svg) no-repeat top left;
     text-indent: -9999px;
     display: inline-block;
     width: 42px;
@@ -166,13 +166,19 @@ section {
         width: 165px;
         height: 165px;
         text-align: center;
-        background: tomato;
-        border-radius: 100px;
-        margin: 0 auto;
-        color: white;
-        font-size: 5rem;
+        margin: 0 auto 4rem;
         line-height: 17rem;
-        margin-bottom: 4rem;
+
+        .fa {
+            width: 50%;
+            height: 100%;
+            opacity: 0;
+            transition: all 2s ease;
+
+            .animate & {
+                opacity: 1;
+            }
+        }
     }
 
     .year {
@@ -196,48 +202,288 @@ section {
             transition: all 1s ease;
         }
 
-        &.one:after {
-            background: #aed43e;
-        }
-
-        &.two:after {
-            background: #00b37e;
-        }
-
-        &.three:after {
-            background: #2e70b8;
-        }
-
-        &.four:after {
-            background: #8b3996;
-        }
-
-        &.five:after {
-            background: #c00071;
-        }
-
-        &.six:after {
-            background: #e64d9e;
-        }
-
-        &.seven:after {
-            background: #ee5974;
-        }
-
-        &.eight:after {
-            background: #faaa57;
-        }
-
-        &.nine:after {
-            background: #f9b688;
-        }
-
-        &.ten:after {
-            background: #ffd960;
-        }
-
-        &.animate:after {
+        .animate &:after {
             width: 100%;
+        }
+    }
+
+    .text {
+        strong {
+            display: block;
+        }
+    }
+
+    .entry-1 {
+        .icon {
+            background: url(../img/35-circle-1981.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/open-sign-1981.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-1;
+        }
+
+        .text a {
+            color: $year-1;
+        }
+    }
+
+    .entry-2 {
+        .icon {
+            background: url(../img/35-circle-1983.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/glasses-1983.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-2;
+        }
+
+        .text a {
+            color: $year-2;
+        }
+    }
+
+    .entry-3 {
+        .icon {
+            background: url(../img/35-circle-1984.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/building-1984.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-3;
+        }
+
+        .text a {
+            color: $year-3;
+        }
+    }
+
+    .entry-4 {
+        .icon {
+            background: url(../img/35-circle-1985.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/person-1985.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-4;
+        }
+
+        .text a {
+            color: $year-4;
+        }
+    }
+
+    .entry-5 {
+        .icon {
+            background: url(../img/35-circle-1986.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/gears-1986.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-5;
+        }
+
+        .text a {
+            color: $year-5;
+        }
+    }
+
+    .entry-6 {
+        .icon {
+            background: url(../img/35-circle-1987.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/apple-computer-1987.svg") no-repeat center center;
+            width: 40%;
+        }
+
+        .year:after {
+            background: $year-6;
+        }
+
+        .text a {
+            color: $year-6;
+        }
+    }
+
+    .entry-7 {
+        .icon {
+            background: url(../img/35-circle-1991.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/building-1991.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-7;
+        }
+
+        .text a {
+            color: $year-7;
+        }
+    }
+
+    .entry-8 {
+        .icon {
+            background: url(../img/35-circle-1994.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/qltd-logo-1994.svg") no-repeat center center;
+            width: 80%;
+        }
+
+        .year:after {
+            background: $year-8;
+        }
+
+        .text a {
+            color: $year-8;
+        }
+    }
+
+    .entry-9 {
+        .icon {
+            background: url(../img/35-circle-1995.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/peter-1995.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-9;
+        }
+
+        .text a {
+            color: $year-9;
+        }
+    }
+
+    .entry-10 {
+        .icon {
+            background: url(../img/35-circle-1996.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/www-1996.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-10;
+        }
+
+        .text a {
+            color: $year-10;
+        }
+    }
+
+    .entry-11 {
+        .icon {
+            background: url(../img/35-circle-1987.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/palm-tree-1997.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-11;
+        }
+
+        .text a {
+            color: $year-11;
+        }
+    }
+
+    .entry-12 {
+        .icon {
+            background: url(../img/35-circle-2003.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/globe-2003.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-12;
+        }
+
+        .text a {
+            color: $year-12;
+        }
+    }
+
+    .entry-13 {
+        .icon {
+            background: url(../img/35-circle-2011.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/torch-2011.svg") no-repeat center center;
+            width: 20%;
+        }
+
+        .year:after {
+            background: $year-13;
+        }
+
+        .text a {
+            color: $year-13;
+        }
+    }
+
+    .entry-14 {
+        .icon {
+            background: url(../img/35-circle-2013.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/leaf-2013.svg") no-repeat center center;
+        }
+
+        .year:after {
+            background: $year-14;
+        }
+
+        .text a {
+            color: $year-14;
+        }
+    }
+
+    .entry-15 {
+        .icon {
+            background: url(../img/35-circle-2016.png) no-repeat top (left / cover);
+        }
+
+        .fa {
+            background: url("../img/wine-2016.svg") no-repeat center center;
+            width: 30%;
+        }
+
+        .year:after {
+            background: $year-15;
+        }
+
+        .text a {
+            color: $year-15;
         }
     }
 }
@@ -246,6 +492,19 @@ section {
     background: #e27f67;
     color: white;
     padding: 10rem 0 0;
+
+    .section-icon {
+        width: 165px;
+        height: 165px;
+        margin: 0 auto 4rem;
+        background: url(../img/35-circle-1995.png) no-repeat top (left / cover);
+
+        i {
+            width: 50%;
+            height: 100%;
+            background: url(../img/camera-photo-history.svg) no-repeat center center;
+        }
+    }
 }
 
 .carousel {

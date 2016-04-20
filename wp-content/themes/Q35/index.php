@@ -22,67 +22,21 @@ get_header(); ?>
             <div class="column">
                 <div class="row align-center">
                     <div class="column small-6">
-                        <h2>Q Timeline</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+                        <h2><?php echo get_the_title(20); ?></h2>
+                        <?php echo apply_filters('the_content', get_post_field('post_content', 20)); ?>
                     </div>
                 </div>
-                <div class="row align-center timeline">
-                    <div class="column small-2 entry-one">
-                        <div class="icon align-self-middle"><i class="fa fa-anchor"></i></div>
-                        <div class="year one">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
+                <?php $c=0; $r=0; while(has_sub_field('timeline_content', 20)): $c++; $r++; ?>
+                    <?php if ($r==1):?><div class="row align-center timeline"><?php endif; ?>
+                     <div class="column small-2 entry-<?php echo $c; ?>">
+                        <div class="icon align-self-middle"><i class="fa"></i></div>
+                        <div class="year"><?php the_sub_field('year'); ?></div>
+                        <div class="text"><?php the_sub_field('content'); ?></div>
                     </div>
-                    <div class="column small-2 entry-two">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year two">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-three">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year three">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-four">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year four">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-five">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year five">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                </div>
-                <div class="row align-center timeline">
-                    <div class="column small-2 entry-six">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year six">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-seven">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year seven">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-eight">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year eight">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-nine">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year nine">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                    <div class="column small-2 entry-ten">
-                        <div class="icon"><i class="fa fa-anchor"></i></div>
-                        <div class="year ten">1981</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh.</p>
-                    </div>
-                </div>
+                    <?php if ($r==5): ?></div><?php $r=0; endif;  ?>
+                <?php endwhile; ?>
             </div>
         </div>
-
     </section>
 
 <section class="parallax"></section>
@@ -92,8 +46,11 @@ get_header(); ?>
         <div class="column">
             <div class="row align-center collapse">
                 <div class="column small-6">
-                    <h2>Q Photo History</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+                    <div class="section-icon">
+                        <i class="fa"></i>
+                    </div>
+                    <h2><?php echo get_the_title(22); ?></h2>
+                        <?php echo apply_filters('the_content', get_post_field('post_content', 22)); ?>
                 </div>
             </div>
         </div>

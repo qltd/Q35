@@ -48,11 +48,9 @@
 
                             <h1 class="banner-text"> Years of
                                 <div class="slidingVertical">
-                                    <span>Design</span>
-                                    <span>Communication</span>
-                                    <span>Development</span>
-                                    <span>Branding</span>
-                                    <span>Badassery</span>
+                                    <?php while(has_sub_field('words')): ?>
+                                        <span><?php the_sub_field('word'); ?></span>
+                                    <?php endwhile; ?>
                                 </div>
                             </h1>
                         </div>

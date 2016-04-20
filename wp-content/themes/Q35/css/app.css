@@ -682,7 +682,7 @@ h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
 
 .logo-header .row { height: 100%; }
 
-#logo { background: url(../img/low-res-logo.jpg) no-repeat top left; text-indent: -9999px; display: inline-block; width: 42px; height: 43px; }
+#logo { background: url(../img/Q.svg) no-repeat top left; text-indent: -9999px; display: inline-block; width: 42px; height: 43px; }
 
 /* Header */
 header { color: #929292; background: #f1f1f2; padding: 0; height: 666px; margin-top: 86px; }
@@ -729,35 +729,145 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .timeline p { font-size: 1.8rem; }
 
-.timeline .icon { width: 165px; height: 165px; text-align: center; background: tomato; border-radius: 100px; margin: 0 auto; color: white; font-size: 5rem; line-height: 17rem; margin-bottom: 4rem; }
+.timeline .icon { width: 165px; height: 165px; text-align: center; margin: 0 auto 4rem; line-height: 17rem; }
+
+.timeline .icon .fa { width: 50%; height: 100%; opacity: 0; -webkit-transition: all 2s ease; transition: all 2s ease; }
+
+.animate .timeline .icon .fa { opacity: 1; }
 
 .timeline .year { display: block; font-size: 4.8rem; line-height: 1.3; font-family: "Pathway Gothic One", sans-serif; color: white; margin-bottom: 4rem; position: relative; }
 
 .timeline .year:after { position: absolute; z-index: -1; top: 50%; left: 50%; content: ''; width: 0%; height: 100%; -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); -webkit-transition: all 1s ease; transition: all 1s ease; }
 
-.timeline .year.one:after { background: #aed43e; }
+.animate .timeline .year:after { width: 100%; }
 
-.timeline .year.two:after { background: #00b37e; }
+.timeline .text strong { display: block; }
 
-.timeline .year.three:after { background: #2e70b8; }
+.timeline .entry-1 .icon { background: url(../img/35-circle-1981.png) no-repeat top left/cover; }
 
-.timeline .year.four:after { background: #8b3996; }
+.timeline .entry-1 .fa { background: url("../img/open-sign-1981.svg") no-repeat center center; }
 
-.timeline .year.five:after { background: #c00071; }
+.timeline .entry-1 .year:after { background: #aed43e; }
 
-.timeline .year.six:after { background: #e64d9e; }
+.timeline .entry-1 .text a { color: #aed43e; }
 
-.timeline .year.seven:after { background: #ee5974; }
+.timeline .entry-2 .icon { background: url(../img/35-circle-1983.png) no-repeat top left/cover; }
 
-.timeline .year.eight:after { background: #faaa57; }
+.timeline .entry-2 .fa { background: url("../img/glasses-1983.svg") no-repeat center center; }
 
-.timeline .year.nine:after { background: #f9b688; }
+.timeline .entry-2 .year:after { background: #00b37e; }
 
-.timeline .year.ten:after { background: #ffd960; }
+.timeline .entry-2 .text a { color: #00b37e; }
 
-.timeline .year.animate:after { width: 100%; }
+.timeline .entry-3 .icon { background: url(../img/35-circle-1984.png) no-repeat top left/cover; }
+
+.timeline .entry-3 .fa { background: url("../img/building-1984.svg") no-repeat center center; }
+
+.timeline .entry-3 .year:after { background: #2e70b8; }
+
+.timeline .entry-3 .text a { color: #2e70b8; }
+
+.timeline .entry-4 .icon { background: url(../img/35-circle-1985.png) no-repeat top left/cover; }
+
+.timeline .entry-4 .fa { background: url("../img/person-1985.svg") no-repeat center center; }
+
+.timeline .entry-4 .year:after { background: #8b3996; }
+
+.timeline .entry-4 .text a { color: #8b3996; }
+
+.timeline .entry-5 .icon { background: url(../img/35-circle-1986.png) no-repeat top left/cover; }
+
+.timeline .entry-5 .fa { background: url("../img/gears-1986.svg") no-repeat center center; }
+
+.timeline .entry-5 .year:after { background: #c00071; }
+
+.timeline .entry-5 .text a { color: #c00071; }
+
+.timeline .entry-6 .icon { background: url(../img/35-circle-1987.png) no-repeat top left/cover; }
+
+.timeline .entry-6 .fa { background: url("../img/apple-computer-1987.svg") no-repeat center center; width: 40%; }
+
+.timeline .entry-6 .year:after { background: #e64d9e; }
+
+.timeline .entry-6 .text a { color: #e64d9e; }
+
+.timeline .entry-7 .icon { background: url(../img/35-circle-1991.png) no-repeat top left/cover; }
+
+.timeline .entry-7 .fa { background: url("../img/building-1991.svg") no-repeat center center; }
+
+.timeline .entry-7 .year:after { background: #ee5974; }
+
+.timeline .entry-7 .text a { color: #ee5974; }
+
+.timeline .entry-8 .icon { background: url(../img/35-circle-1994.png) no-repeat top left/cover; }
+
+.timeline .entry-8 .fa { background: url("../img/qltd-logo-1994.svg") no-repeat center center; width: 80%; }
+
+.timeline .entry-8 .year:after { background: #faaa57; }
+
+.timeline .entry-8 .text a { color: #faaa57; }
+
+.timeline .entry-9 .icon { background: url(../img/35-circle-1995.png) no-repeat top left/cover; }
+
+.timeline .entry-9 .fa { background: url("../img/peter-1995.svg") no-repeat center center; }
+
+.timeline .entry-9 .year:after { background: #f9b688; }
+
+.timeline .entry-9 .text a { color: #f9b688; }
+
+.timeline .entry-10 .icon { background: url(../img/35-circle-1996.png) no-repeat top left/cover; }
+
+.timeline .entry-10 .fa { background: url("../img/www-1996.svg") no-repeat center center; }
+
+.timeline .entry-10 .year:after { background: #e5a59d; }
+
+.timeline .entry-10 .text a { color: #e5a59d; }
+
+.timeline .entry-11 .icon { background: url(../img/35-circle-1987.png) no-repeat top left/cover; }
+
+.timeline .entry-11 .fa { background: url("../img/palm-tree-1997.svg") no-repeat center center; }
+
+.timeline .entry-11 .year:after { background: #d87fca; }
+
+.timeline .entry-11 .text a { color: #d87fca; }
+
+.timeline .entry-12 .icon { background: url(../img/35-circle-2003.png) no-repeat top left/cover; }
+
+.timeline .entry-12 .fa { background: url("../img/globe-2003.svg") no-repeat center center; }
+
+.timeline .entry-12 .year:after { background: #88a5e4; }
+
+.timeline .entry-12 .text a { color: #88a5e4; }
+
+.timeline .entry-13 .icon { background: url(../img/35-circle-2011.png) no-repeat top left/cover; }
+
+.timeline .entry-13 .fa { background: url("../img/torch-2011.svg") no-repeat center center; width: 20%; }
+
+.timeline .entry-13 .year:after { background: #57c5d6; }
+
+.timeline .entry-13 .text a { color: #57c5d6; }
+
+.timeline .entry-14 .icon { background: url(../img/35-circle-2013.png) no-repeat top left/cover; }
+
+.timeline .entry-14 .fa { background: url("../img/leaf-2013.svg") no-repeat center center; }
+
+.timeline .entry-14 .year:after { background: #70e9e1; }
+
+.timeline .entry-14 .text a { color: #70e9e1; }
+
+.timeline .entry-15 .icon { background: url(../img/35-circle-2016.png) no-repeat top left/cover; }
+
+.timeline .entry-15 .fa { background: url("../img/wine-2016.svg") no-repeat center center; width: 30%; }
+
+.timeline .entry-15 .year:after { background: #83f5bb; }
+
+.timeline .entry-15 .text a { color: #83f5bb; }
 
 #gallery { background: #e27f67; color: white; padding: 10rem 0 0; }
+
+#gallery .section-icon { width: 165px; height: 165px; margin: 0 auto 4rem; background: url(../img/35-circle-1995.png) no-repeat top left/cover; }
+
+#gallery .section-icon i { width: 50%; height: 100%; background: url(../img/camera-photo-history.svg) no-repeat center center; }
 
 .carousel { margin-top: 5rem; }
 

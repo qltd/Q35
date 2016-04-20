@@ -44,7 +44,7 @@ $(function(){
                 var $li = $(li);
                 var visible = $li.visible(true);
                 if (visible){
-                        $li.find('.year').each(function(ii, li2){
+                        $li.each(function(ii, li2){
                             setTimeout(function(){
                                 $(li2).addClass('animate');
                              }, ii*200);

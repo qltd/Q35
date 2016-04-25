@@ -1,3 +1,31 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html { box-sizing: border-box; }
+
+*, *:before, *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ box-sizing: inherit; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
+
+.screen-reader-text:focus { background-color: #f1f1f1; border-radius: 3px; box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); clip: auto !important; color: #21759b; display: block; font-size: 14px; font-size: 0.875rem; font-weight: bold; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; /* Above WP toolbar. */ }
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus { outline: 0; }
+
+/*--------------------------------------------------------------
+# Alignments for WP
+--------------------------------------------------------------*/
+.alignleft { display: inline; float: left; margin-right: 1.5em; }
+
+.alignright { display: inline; float: right; margin-left: 1.5em; }
+
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+/* Inline Responsive Media Query */
 /** Foundation for Sites by ZURB Version 6.2.0 foundation.zurb.com Licensed under MIT Open Source */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. */
@@ -721,11 +749,21 @@ section.animate { opacity: 1; }
 
 section.parallax { background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed; background-size: cover; padding: 3rem 0; }
 
-section h2 { font-size: 9rem; }
+@media screen and (max-width: 768px) { section.parallax { padding: 2rem 0; } }
+
+section h2 { font-size: 9rem; line-height: 1; }
+
+@media screen and (max-width: 800px) { section h2 { font-size: 7rem; } }
 
 section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem; }
 
-.timeline { margin-top: 10rem; }
+@media screen and (max-width: 800px) { section p { font-size: 1.6rem; } }
+
+.timeline { margin-top: 10rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.timeline .column, .timeline .columns { margin-bottom: 40px; -webkit-box-flex: 1; -webkit-flex: 1 1 20%; -ms-flex: 1 1 20%; flex: 1 1 20%; }
+
+@media screen and (max-width: 650px) { .timeline .column, .timeline .columns { -webkit-box-flex: 1; -webkit-flex: 1 1 100%; -ms-flex: 1 1 100%; flex: 1 1 100%; } }
 
 .timeline p { font-size: 1.8rem; }
 
@@ -775,7 +813,7 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .timeline .entry-4 .text a { color: #8b3996; }
 
-.timeline .entry-5 .icon { background: url(../img/35-circle-1986.png) no-repeat top left/cover; }
+.timeline .entry-5 .icon { background: url(../img/35-circle-1987.png) no-repeat top left/cover; }
 
 .timeline .entry-5 .fa { background: url("../img/gears-1986.svg") no-repeat center center; }
 
@@ -783,29 +821,29 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .timeline .entry-5 .text a { color: #c00071; }
 
-.timeline .entry-6 .icon { background: url(../img/35-circle-1987.png) no-repeat top left/cover; }
+.timeline .entry-6 .icon { background: url(../img/35-circle-1986.png) no-repeat top left/cover; }
 
 .timeline .entry-6 .fa { background: url("../img/apple-computer-1987.svg") no-repeat center center; width: 40%; }
 
-.timeline .entry-6 .year:after { background: #e64d9e; }
+.timeline .entry-6 .year:after { background: #ee5974; }
 
-.timeline .entry-6 .text a { color: #e64d9e; }
+.timeline .entry-6 .text a { color: #ee5974; }
 
 .timeline .entry-7 .icon { background: url(../img/35-circle-1991.png) no-repeat top left/cover; }
 
 .timeline .entry-7 .fa { background: url("../img/building-1991.svg") no-repeat center center; }
 
-.timeline .entry-7 .year:after { background: #ee5974; }
+.timeline .entry-7 .year:after { background: #faaa57; }
 
-.timeline .entry-7 .text a { color: #ee5974; }
+.timeline .entry-7 .text a { color: #faaa57; }
 
 .timeline .entry-8 .icon { background: url(../img/35-circle-1994.png) no-repeat top left/cover; }
 
 .timeline .entry-8 .fa { background: url("../img/qltd-logo-1994.svg") no-repeat center center; width: 80%; }
 
-.timeline .entry-8 .year:after { background: #faaa57; }
+.timeline .entry-8 .year:after { background: #eec81f; }
 
-.timeline .entry-8 .text a { color: #faaa57; }
+.timeline .entry-8 .text a { color: #eec81f; }
 
 .timeline .entry-9 .icon { background: url(../img/35-circle-1995.png) no-repeat top left/cover; }
 
@@ -823,7 +861,7 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .timeline .entry-10 .text a { color: #e5a59d; }
 
-.timeline .entry-11 .icon { background: url(../img/35-circle-1987.png) no-repeat top left/cover; }
+.timeline .entry-11 .icon { background: url(../img/35-circle-1997.png) no-repeat top left/cover; }
 
 .timeline .entry-11 .fa { background: url("../img/palm-tree-1997.svg") no-repeat center center; }
 
@@ -873,27 +911,31 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .slide .img-row { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.slide .img-row:first-child a:nth-child(1):before { background: rgba(162, 123, 170, 0.5); }
+.slide .img-row:first-child div:nth-child(1):before { background: rgba(162, 123, 170, 0.5); }
 
-.slide .img-row:first-child a:nth-child(2):before { background: rgba(179, 71, 105, 0.5); }
+.slide .img-row:first-child div:nth-child(2):before { background: rgba(179, 71, 105, 0.5); }
 
-.slide .img-row:first-child a:nth-child(3):before { background: rgba(218, 86, 132, 0.5); }
+.slide .img-row:first-child div:nth-child(3):before { background: rgba(218, 86, 132, 0.5); }
 
-.slide .img-row:last-child a:nth-child(1):before { background: rgba(243, 215, 77, 0.5); }
+.slide .img-row:last-child div:nth-child(1):before { background: rgba(243, 215, 77, 0.5); }
 
-.slide .img-row:last-child a:nth-child(2):before { background: rgba(226, 151, 83, 0.5); }
+.slide .img-row:last-child div:nth-child(2):before { background: rgba(226, 151, 83, 0.5); }
 
-.slide .img-row:last-child a:nth-child(3):before { background: rgba(220, 75, 85, 0.5); }
+.slide .img-row:last-child div:nth-child(3):before { background: rgba(220, 75, 85, 0.5); }
 
-.slide .img-row a { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-transition: all 0.5s; transition: all 0.5s; background: url(http://i.imgur.com/dpQzWkM.jpg) no-repeat center center; background-size: cover; position: relative; display: block; }
+.slide .img-row div { -webkit-box-flex: 1; -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; -webkit-transition: all 0.5s; transition: all 0.5s; background: url(http://i.imgur.com/dpQzWkM.jpg) no-repeat center center; background-size: cover; position: relative; display: block; }
 
-.slide .img-row a.grow { -webkit-box-flex: 2; -webkit-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
+.slide .img-row div.grow { -webkit-box-flex: 2; -webkit-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
 
-.slide .img-row a:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; z-index: 999; }
+.slide .img-row div:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: all 0.3s linear; transition: all 0.3s linear; z-index: 999; }
 
-.slide .img-row a:hover:before, .slide .img-row a.grow:before { background: transparent !important; }
+.slide .img-row div:hover:before, .slide .img-row div.grow:before { background: transparent !important; }
 
-.slide .img-row a img { max-width: none; display: none; }
+.slide .img-row div img { max-width: none; display: none; }
+
+.slick-slide { background: tomato; }
+
+.slick-slide img { width: 100%; height: auto; }
 
 #alum { background: #41b387; color: white; padding: 8rem 0; }
 
@@ -905,7 +947,7 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .people .row.animate { opacity: 1; }
 
-.people .small-3 { margin-bottom: 1.5rem; font-weight: bold; font-style: italic; font-size: 2.4rem; }
+.people .small-3, .people .person { margin-bottom: 1.5rem; font-weight: bold; font-style: italic; font-size: 2.4rem; }
 
 /* Footer */
 footer { background: #929292; color: #fff; padding: 6.3rem 0; }

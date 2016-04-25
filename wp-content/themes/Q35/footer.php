@@ -40,6 +40,7 @@
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/visible.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
     <?php wp_footer(); ?>
 

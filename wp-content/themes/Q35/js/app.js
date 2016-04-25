@@ -20,11 +20,11 @@ $(function(){
     });
 
 
-    $(".slide a").on('click', function() {
+    $(".slide div").on('click', function() {
         if ($(this).hasClass('grow')){
-            $(".slide a").removeClass("grow");
+            $(".slide div").removeCldivss("grow");
         } else {
-            $(".slide a").removeClass("grow");
+            $(".slide div").removeClass("grow");
             $(this).addClass("grow");
         }
         return false;
@@ -83,6 +83,8 @@ $(function(){
         }
 
     });
+
+    $('.slider').slick()
 
 });
 

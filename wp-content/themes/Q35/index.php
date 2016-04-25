@@ -26,15 +26,15 @@ get_header(); ?>
                         <?php echo apply_filters('the_content', get_post_field('post_content', 20)); ?>
                     </div>
                 </div>
-                <?php $c=0; $r=0; while(has_sub_field('timeline_content', 20)): $c++; $r++; ?>
-                    <?php if ($r==1):?><div class="row align-center timeline"><?php endif; ?>
-                     <div class="column small-2 entry-<?php echo $c; ?>">
+                <div class="timeline">
+                <?php $c=0; $r=0; while(have_rows('timeline_content', 20)): the_row(); $c++; $r++; ?>
+                     <div class="column entry-<?php echo $c; ?>">
                         <div class="icon align-self-middle"><i class="fa"></i></div>
                         <div class="year"><?php the_sub_field('year'); ?></div>
                         <div class="text"><?php the_sub_field('content'); ?></div>
                     </div>
-                    <?php if ($r==5): ?></div><?php $r=0; endif;  ?>
                 <?php endwhile; ?>
+                </div>
             </div>
         </div>
     </section>
@@ -45,7 +45,7 @@ get_header(); ?>
     <div class="row collapse">
         <div class="column">
             <div class="row align-center collapse">
-                <div class="column small-6">
+                <div class="column large-6 medium-10">
                     <div class="section-icon">
                         <i class="fa"></i>
                     </div>
@@ -56,37 +56,40 @@ get_header(); ?>
         </div>
     </div>
     <div class="carousel">
-        <div class="slide">
-
-            <div class="img-row">
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+           <?php $r=0; while(have_rows('slider', 22)): the_row(); ?>
+                <div class="slide">
+                <?php while(have_rows('gallery', 22)): the_row(); $r++; ?>
+                    <?php if ($r==1):?><div class="img-row"><?php endif; ?>
+                    <div style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"></div>
+                    <?php if ($r==3): ?></div><?php $r=0; endif;  ?>
+                <?php endwhile; ?>
+                </div>
+            <?php endwhile; ?>
             </div>
-
-            <div class="img-row">
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
-                <a href="http://lorempixel.com/1200/700/nature" style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"><img src="http://lorempixel.com/800/700/nature" /></a>
-            </div>
-
-        </div>
     </div>
 </section>
 
 <section class="parallax"></section>
 
 <section id="history">
-<div class="row">
-    <div class="column">
-        <div class="row align-center">
-            <div class="column small-6">
-                <h2>Q Identity History</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+    <div class="row">
+        <div class="column">
+            <div class="row align-center">
+                <div class="column large-6 medium-10">
+                    <h2>Q Identity History</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+    </div>
 </section>
 
 <section class="parallax"></section>
@@ -95,7 +98,7 @@ get_header(); ?>
 <div class="row">
 <div class="column">
     <div class="row align-center">
-        <div class="column small-6">
+        <div class="column large-6 medium-10">
             <h2>Q Alum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
         </div>
@@ -103,114 +106,114 @@ get_header(); ?>
     <div class="row align-center people">
         <div class="column small-10">
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
             <div class="row">
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Tamakia Ohman
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Kellye Patlan
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Beatris Kravetz
                 </div>
-                <div class="column small-3">
+                <div class="column large-3 medium-6 person">
                     Gwenn Bungard
                 </div>
             </div>
@@ -224,7 +227,7 @@ get_header(); ?>
 <div class="row">
 <div class="column">
     <div class="row align-center">
-        <div class="column small-6">
+        <div class="column large-6 medium-10">
             <h2>Q Interns</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
         </div>
@@ -356,7 +359,7 @@ get_header(); ?>
 <div class="row">
 <div class="column">
 <div class="row align-center">
-<div class="column small-6">
+<div class="column large-6 medium-10">
     <h2>Q Party</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
 </div>

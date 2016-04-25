@@ -19,6 +19,7 @@
 
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
             <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
             <script src="https://use.typekit.net/plk3hpp.js"></script>
             <script>try{Typekit.load({ async: true });}catch(e){}</script>
             <?php wp_head(); ?>

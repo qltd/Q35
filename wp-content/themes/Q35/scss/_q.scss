@@ -142,21 +142,45 @@ section {
         background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed;
         background-size: cover;
         padding: 3rem 0;
+
+        @include responsive("768px") {
+            padding: 2rem 0;
+        }
     }
 
     h2 {
         font-size: 9rem;
+        line-height: 1;
+
+        @include responsive("800px") {
+            font-size: 7rem;
+        }
     }
 
     p {
         font-family: $body-font-family;
         font-style: italic;
         font-size: 2.3rem;
+
+        @include responsive("800px") {
+            font-size: 1.6rem;
+        }
     }
 }
 
 .timeline {
     margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    .column {
+        margin-bottom: 40px;
+        flex: 1 1 20%;
+
+        @include responsive("650px") {
+            flex: 1 1 100%;
+        }
+    }
 
     p {
         font-size: 1.8rem;
@@ -287,7 +311,7 @@ section {
 
     .entry-5 {
         .icon {
-            background: url(../img/35-circle-1986.png) no-repeat top (left / cover);
+            background: url(../img/35-circle-1987.png) no-repeat top (left / cover);
         }
 
         .fa {
@@ -305,7 +329,7 @@ section {
 
     .entry-6 {
         .icon {
-            background: url(../img/35-circle-1987.png) no-repeat top (left / cover);
+            background: url(../img/35-circle-1986.png) no-repeat top (left / cover);
         }
 
         .fa {
@@ -397,7 +421,7 @@ section {
 
     .entry-11 {
         .icon {
-            background: url(../img/35-circle-1987.png) no-repeat top (left / cover);
+            background: url(../img/35-circle-1997.png) no-repeat top (left / cover);
         }
 
         .fa {
@@ -517,7 +541,7 @@ section {
         flex-wrap: wrap;
 
         &:first-child {
-            a {
+            div {
                 &:nth-child(1):before {
                     background: rgba(162, 123, 170, 0.5);
                 }
@@ -533,7 +557,7 @@ section {
         }
 
         &:last-child {
-            a {
+            div {
                 &:nth-child(1):before {
                     background: rgba(243, 215, 77, 0.5);
                 }
@@ -548,10 +572,8 @@ section {
             }
         }
 
-        a {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: auto;
+        div {
+            flex: 1 1 auto;
             transition: all 0.5s;
             background: url(http://i.imgur.com/dpQzWkM.jpg) no-repeat center center;
             background-size: cover;
@@ -586,6 +608,15 @@ section {
     }
 }
 
+.slick-slide {
+    background: tomato;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 #alum {
     background: #41b387;
     color: white;
@@ -609,7 +640,7 @@ section {
         }
     }
 
-    .small-3 {
+    .small-3, .person {
         margin-bottom: 1.5rem;
         font-weight: bold;
         font-style: italic;

@@ -59,9 +59,9 @@ get_header(); ?>
             <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
            <?php $r=0; while(have_rows('slider', 22)): the_row(); ?>
                 <div class="slide">
-                <?php while(have_rows('gallery', 22)): the_row(); $r++; ?>
+                <?php while(have_rows('gallery', 22)): the_row(); $r++; $img = get_sub_field('image'); ?>
                     <?php if ($r==1):?><div class="img-row"><?php endif; ?>
-                    <div style="background: url(http://lorempixel.com/1200/700/nature) no-repeat center center; background-size: cover;"></div>
+                    <div style="background: url(<?php echo $img['url']; ?>) no-repeat center center; background-size: cover;"></div>
                     <?php if ($r==3): ?></div><?php $r=0; endif;  ?>
                 <?php endwhile; ?>
                 </div>
@@ -77,18 +77,16 @@ get_header(); ?>
         <div class="column">
             <div class="row align-center">
                 <div class="column large-6 medium-10">
-                    <h2>Q Identity History</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+                     <h2><?php echo get_the_title(25); ?></h2>
+                        <?php echo apply_filters('the_content', get_post_field('post_content', 25)); ?>
                 </div>
             </div>
         </div>
     </div>
     <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
-        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
-        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
-        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
-        <div><img src="http://dummyimage.com/1400x700.jpg?text=placeholder" /></div>
+        <?php while(have_rows('slider', 25)): the_row(); $img = get_sub_field('image'); ?>
+            <div><img src="<?php echo $img['url']; ?>" /></div>
+        <?php endwhile; ?>
     </div>
 </section>
 
@@ -99,123 +97,16 @@ get_header(); ?>
 <div class="column">
     <div class="row align-center">
         <div class="column large-6 medium-10">
-            <h2>Q Alum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+            <h2><?php echo get_the_title(27); ?></h2>
+                        <?php echo apply_filters('the_content', get_post_field('post_content', 27)); ?>
         </div>
     </div>
     <div class="row align-center people">
-        <div class="column small-10">
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column large-3 medium-6 person">
-                    Tamakia Ohman
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Kellye Patlan
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Beatris Kravetz
-                </div>
-                <div class="column large-3 medium-6 person">
-                    Gwenn Bungard
-                </div>
+        <div class="column large-10 medium-12 small-12">
+            <div class="alum">
+               <?php while(have_rows('alum_list', 27)): the_row(); ?>
+                    <div class="person"><?php the_sub_field('alum'); ?></div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
@@ -228,123 +119,16 @@ get_header(); ?>
 <div class="column">
     <div class="row align-center">
         <div class="column large-6 medium-10">
-            <h2>Q Interns</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+            <h2><?php echo get_the_title(29); ?></h2>
+                <?php echo apply_filters('the_content', get_post_field('post_content', 29)); ?>
         </div>
     </div>
     <div class="row align-center people">
-        <div class="column small-10">
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
-            </div>
-            <div class="row">
-                <div class="column small-3">
-                    Tamakia Ohman
-                </div>
-                <div class="column small-3">
-                    Kellye Patlan
-                </div>
-                <div class="column small-3">
-                    Beatris Kravetz
-                </div>
-                <div class="column small-3">
-                    Gwenn Bungard
-                </div>
+        <div class="column large-10 medium-12 small-12">
+            <div class="alum">
+               <?php while(have_rows('intern_list', 29)): the_row(); ?>
+                    <div class="person"><?php the_sub_field('intern'); ?></div>
+                <?php endwhile; ?>
             </div>
         </div>
     </div>
@@ -360,8 +144,8 @@ get_header(); ?>
 <div class="column">
 <div class="row align-center">
 <div class="column large-6 medium-10">
-    <h2>Q Party</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed velit neque, sed placerat nibh. Duis eu lorem eu leo vulputate pellentesque. Aenean ut nibh tortor. Phasellus id velit a nisl suscipit tempor. Quisque a aliquam neque. Pellentesque viverra, sem sed porta gravida, enim nunc congue urna, nec lacinia nisl diam eget lectus. </p>
+     <h2><?php echo get_the_title(31); ?></h2>
+                <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
 </div>
 </div>
 </div>

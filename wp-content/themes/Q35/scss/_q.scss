@@ -617,6 +617,45 @@ section {
     }
 }
 
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-arrow {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    @include responsive("768px") {
+        display: none;
+    }
+
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.2);
+        text-indent: 0;
+        margin: 0;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#history {
+    .slider {
+        margin-top: 6rem;
+    }
+}
+
 #alum {
     background: #41b387;
     color: white;
@@ -628,23 +667,31 @@ section {
     color: white;
 }
 
-.people {
+.alum {
     margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
 
-    .row {
-        opacity: 0;
-        transition: all 1s ease;
-
-        &.animate {
-            opacity: 1;
-        }
-    }
-
-    .small-3, .person {
+    .person {
         margin-bottom: 1.5rem;
         font-weight: bold;
         font-style: italic;
         font-size: 2.4rem;
+        flex: 1 1 25%;
+
+        @include responsive("1140px") {
+            flex: 1 1 30%;
+        }
+
+
+        @include responsive("800px") {
+            flex: 1 1 50%;
+        }
+
+
+        @include responsive("550px") {
+            flex: 1 1 100%;
+        }
     }
 }
 

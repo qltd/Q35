@@ -937,17 +937,33 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .slick-slide img { width: 100%; height: auto; }
 
+.slick-next { right: 0; }
+
+.slick-prev { left: 0; }
+
+.slick-arrow { width: 100px; height: 100%; position: absolute; top: 0; z-index: 999; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; overflow: hidden; }
+
+@media screen and (max-width: 768px) { .slick-arrow { display: none; } }
+
+.slick-arrow:hover { background: rgba(0, 0, 0, 0.2); text-indent: 0; margin: 0; }
+
+.slick-arrow:focus { outline: none; }
+
+#history .slider { margin-top: 6rem; }
+
 #alum { background: #41b387; color: white; padding: 8rem 0; }
 
 #interns { background: #72dca1; color: white; }
 
-.people { margin-top: 6rem; }
+.alum { margin-top: 6rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.people .row { opacity: 0; -webkit-transition: all 1s ease; transition: all 1s ease; }
+.alum .person { margin-bottom: 1.5rem; font-weight: bold; font-style: italic; font-size: 2.4rem; -webkit-box-flex: 1; -webkit-flex: 1 1 25%; -ms-flex: 1 1 25%; flex: 1 1 25%; }
 
-.people .row.animate { opacity: 1; }
+@media screen and (max-width: 1140px) { .alum .person { -webkit-box-flex: 1; -webkit-flex: 1 1 30%; -ms-flex: 1 1 30%; flex: 1 1 30%; } }
 
-.people .small-3, .people .person { margin-bottom: 1.5rem; font-weight: bold; font-style: italic; font-size: 2.4rem; }
+@media screen and (max-width: 800px) { .alum .person { -webkit-box-flex: 1; -webkit-flex: 1 1 50%; -ms-flex: 1 1 50%; flex: 1 1 50%; } }
+
+@media screen and (max-width: 550px) { .alum .person { -webkit-box-flex: 1; -webkit-flex: 1 1 100%; -ms-flex: 1 1 100%; flex: 1 1 100%; } }
 
 /* Footer */
 footer { background: #929292; color: #fff; padding: 6.3rem 0; }

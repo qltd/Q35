@@ -61,26 +61,25 @@ $(function(){
                 var visible = $(this).visible(true);
                 if (visible) {
                     $(this).addClass('animate');
-                    if (i>=($('section').length)-1) sectionsDone = true;
                 }
             });
         }
 
 
-        if (peopleDone != true){
-            $('.people').each(function(i, li){
-                var $li = $(li);
-                var visible = $li.visible(true);
-                if (visible){
-                        $li.find('.row').each(function(ii, li2){
-                            setTimeout(function(){
-                                $(li2).addClass('animate');
-                             }, ii*200);
-                        });
-                    if (i>=2) peopleDone = true;
-                }
-            });
-        }
+        // if (peopleDone != true){
+        //     $('.people').each(function(i, li){
+        //         var $li = $(li);
+        //         var visible = $li.visible(true);
+        //         if (visible){
+        //                 $li.find('.row').each(function(ii, li2){
+        //                     setTimeout(function(){
+        //                         $(li2).addClass('animate');
+        //                      }, ii*200);
+        //                 });
+        //             if (i>=2) peopleDone = true;
+        //         }
+        //     });
+        // }
 
     });
 

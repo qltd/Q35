@@ -620,21 +620,27 @@ section {
 }
 
 .slick-next {
+    background: url(../img/right-arrow-slider.svg) no-repeat center center;
     right: 0;
 }
 
 .slick-prev {
+    background: url(../img/left-arrow-slider.svg) no-repeat center center;
     left: 0;
 }
 
 .slick-arrow {
-    width: 100px;
+    width: 7%;
     height: 100%;
+    background-origin: content-box;
+    padding: 0 10px;
+    text-indent: -9999px;
     position: absolute;
     top: 0;
     z-index: 999;
     transition: all 0.3s ease;
     overflow: hidden;
+    opacity: 0.5;
 
     @include responsive("768px") {
         display: none;
@@ -642,8 +648,7 @@ section {
 
 
     &:hover {
-        background: rgba(0, 0, 0, 0.2);
-        text-indent: 0;
+        opacity: 1;
         margin: 0;
     }
 

@@ -149,8 +149,11 @@ get_header(); ?>
 <div class="column">
 <div class="row align-center">
 <div class="column large-6 medium-10">
+    <div class="section-icon">
+        <i class="fa"></i>
+    </div>
      <h2><?php echo get_the_title(31); ?></h2>
-                <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
+     <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
 </div>
 </div>
 </div>

@@ -718,6 +718,21 @@ section {
     }
 }
 
+#party {
+    .section-icon {
+        width: 165px;
+        height: 165px;
+        margin: 0 auto 4rem;
+        background: url(../img/35-circle-1986.png) no-repeat top (left / cover);
+
+        i {
+            width: 30%;
+            height: 100%;
+            background: url(../img/wine-35-party.svg) no-repeat center center;
+        }
+    }
+}
+
 /* Footer */
 footer {
     background: $medium-gray;

@@ -630,17 +630,17 @@ section {
 }
 
 .slick-arrow {
-    width: 7%;
+    width: 5%;
     height: 100%;
     background-origin: content-box;
-    padding: 0 10px;
+    padding: 0 20px;
     text-indent: -9999px;
     position: absolute;
     top: 0;
     z-index: 999;
     transition: all 0.3s ease;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 1;
 
     @include responsive("768px") {
         display: none;
@@ -648,7 +648,7 @@ section {
 
 
     &:hover {
-        opacity: 1;
+        opacity: 0.5;
         margin: 0;
     }
 
@@ -660,6 +660,14 @@ section {
 #history {
     .slider {
         margin-top: 6rem;
+
+        .slick-prev {
+            left: -5%;
+        }
+
+        .slick-next {
+            right: -5%;
+        }
     }
 }
 
@@ -667,11 +675,19 @@ section {
     background: #41b387;
     color: white;
     padding: 8rem 0;
+
+    a {
+        color: white;
+    }
 }
 
 #interns {
     background: #72dca1;
     color: white;
+
+    a {
+        color: white;
+    }
 }
 
 .alum {

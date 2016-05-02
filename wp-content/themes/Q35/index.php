@@ -84,7 +84,7 @@ get_header(); ?>
         </div>
     </div>
     <div class="row align-center">
-        <div class="column large-12">
+        <div class="column small-12">
             <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                 <?php while(have_rows('slider', 25)): the_row(); $img = get_sub_field('image'); ?>
                     <div><img src="<?php echo $img['url']; ?>" /></div>

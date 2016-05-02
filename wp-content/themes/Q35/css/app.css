@@ -713,17 +713,17 @@ h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
 #logo { background: url(../img/Q.svg) no-repeat top left; text-indent: -9999px; display: inline-block; width: 42px; height: 43px; }
 
 /* Header */
-header { color: #929292; background: #f1f1f2; padding: 0; height: 666px; margin-top: 86px; }
+header { color: #929292; background: #f1f1f2; padding: 0; height: 666px; margin-top: 86px; padding: 18rem 0; }
 
-.thirty-five { padding: 0; margin: 0 2rem 0 0; max-width: 450px; height: 666px; width: 100%; position: relative; overflow: hidden; }
+.thirty-five { padding: 0; margin: 0 2rem 0 0; max-width: 450px; height: 300px; width: 100%; position: relative; overflow: hidden; }
 
 .thirty-five .layer { position: absolute; width: 100%; height: 100%; padding: 0; z-index: 10; top: 0px; }
 
-.thirty-five #layer1 { background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed; background-size: 450px 700px; z-index: 1; }
+.thirty-five #layer1 { background: transparent url(../img/35-years-background-vector-2.svg) repeat top right fixed; background-size: 450px 700px; height: 296px; z-index: 1; }
 
-.thirty-five #top-layer { border-top: 19rem solid #f1f1f2; border-bottom: 18rem solid #f1f1f2; }
+.banner-text { margin: 0; padding: 0; display: inline-block; font-size: 4.8rem; min-width: 400px; }
 
-.banner-text { margin: 0; padding: 0; display: inline-block; min-width: 400px; }
+@media screen and (max-width: 885px) { .banner-text { min-width: 465px; } }
 
 /*Vertical Sliding*/
 .slidingVertical { display: inline; text-indent: 8px; }

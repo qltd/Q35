@@ -83,10 +83,14 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-        <?php while(have_rows('slider', 25)): the_row(); $img = get_sub_field('image'); ?>
-            <div><img src="<?php echo $img['url']; ?>" /></div>
-        <?php endwhile; ?>
+    <div class="row align-center">
+        <div class="column small-12">
+            <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                <?php while(have_rows('slider', 25)): the_row(); $img = get_sub_field('image'); ?>
+                    <div><img src="<?php echo $img['url']; ?>" /></div>
+                <?php endwhile; ?>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -99,6 +103,7 @@ get_header(); ?>
         <div class="column large-6 medium-10">
             <h2><?php echo get_the_title(27); ?></h2>
                         <?php echo apply_filters('the_content', get_post_field('post_content', 27)); ?>
+                        <p><a href="mailto:matt@qltd.com?subject=Q Share a Memory&body=Hello"><strong>Share a memory ></strong></a></p>
         </div>
     </div>
     <div class="row align-center people">
@@ -144,8 +149,11 @@ get_header(); ?>
 <div class="column">
 <div class="row align-center">
 <div class="column large-6 medium-10">
+    <div class="section-icon">
+        <i class="fa"></i>
+    </div>
      <h2><?php echo get_the_title(31); ?></h2>
-                <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
+     <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
 </div>
 </div>
 </div>

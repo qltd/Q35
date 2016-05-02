@@ -47,13 +47,13 @@
 
                             </ul>
 
-                            <h1 class="banner-text"> Years of
+                            <h2 class="banner-text"> Years of
                                 <div class="slidingVertical">
                                     <?php while(has_sub_field('words')): ?>
                                         <span><?php the_sub_field('word'); ?></span>
                                     <?php endwhile; ?>
                                 </div>
-                            </h1>
+                            </h2>
                         </div>
                     </div>
                 </div>

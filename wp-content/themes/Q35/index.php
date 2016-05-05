@@ -145,19 +145,16 @@ get_header(); ?>
 <section class="parallax"></section>
 
 <section id="party">
-<div class="row">
-<div class="column">
-<div class="row align-center">
-<div class="column large-6 medium-10">
-    <div class="section-icon">
-        <i class="fa"></i>
+    <canvas id="confetti"></canvas>
+    <div id="party-info">
+        <div>
+                        <div class="section-icon">
+                            <i class="fa"></i>
+                        </div>
+                        <h2><?php echo get_the_title(31); ?></h2>
+                        <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
+                    </div>
     </div>
-     <h2><?php echo get_the_title(31); ?></h2>
-     <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
-</div>
-</div>
-</div>
-</div>
 </section>
 
 <section class="parallax"></section>

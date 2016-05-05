@@ -923,7 +923,7 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 .slide .img-row:last-child div:nth-child(3):before { background: rgba(220, 75, 85, 0.5); }
 
-.slide .img-row div { -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; transition: all 0.5s; background: url(http://i.imgur.com/dpQzWkM.jpg) no-repeat center center; background-size: cover; position: relative; display: block; }
+.slide .img-row div { -webkit-flex: 1 1 auto; -ms-flex: 1 1 auto; flex: 1 1 auto; transition: all 0.5s; background-size: cover; position: relative; display: block; }
 
 .slide .img-row div.grow { -webkit-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; }
 

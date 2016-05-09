@@ -984,13 +984,17 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 /* Footer */
 footer { background: #929292; color: #fff; padding: 6.3rem 0; }
 
-footer p { font-size: 1.2rem; }
+footer img { max-width: 250px; }
+
+footer p { font-size: 1.2rem; font-family: "adelle", serif; }
 
 footer .social-icons { margin: 5rem 0; }
 
 footer .social-icons li { list-style: none; display: inline-block; margin-right: 1.5rem; }
 
 footer .social-icons a { color: #fff; font-size: 2.4rem; }
+
+@media screen and (max-width: 768px) { footer .social-icons a { font-size: 3rem; } }
 
 /* Header Animation */
 /*topToBottom Animation*/

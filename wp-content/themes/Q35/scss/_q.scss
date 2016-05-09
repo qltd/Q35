@@ -765,8 +765,13 @@ footer {
     color: #fff;
     padding: 6.3rem 0;
 
+    img {
+        max-width: 250px;
+    }
+
     p {
         font-size: 1.2rem;
+        font-family: $body-font-family;
     }
 
     .social-icons {
@@ -781,6 +786,10 @@ footer {
         a {
             color: #fff;
             font-size: 2.4rem;
+
+            @include responsive("768px") {
+                font-size: 3rem;
+            }
         }
     }
 }

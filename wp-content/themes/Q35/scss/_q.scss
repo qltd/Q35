@@ -765,10 +765,11 @@ section {
     padding: 0;
     line-height: 0;
     font-size: 0;
+    max-height: 800px;
+    overflow: hidden;
 
     @include responsive("768px") {
         max-height: 600px;
-        overflow: hidden;
     }
 
 

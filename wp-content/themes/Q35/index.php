@@ -42,8 +42,8 @@ get_header(); ?>
 <section class="parallax"></section>
 
 <section id="gallery">
-    <div class="row collapse">
-        <div class="column">
+    <div class="row align-center collapse">
+        <div class="column medium-10">
             <div class="row align-center collapse">
                 <div class="column large-6 medium-10">
                     <div class="section-icon">

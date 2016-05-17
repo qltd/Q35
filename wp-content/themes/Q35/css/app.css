@@ -738,6 +738,8 @@ header { color: #929292; background: #f1f1f2; padding: 0; height: 666px; margin-
 
 .slidingVertical span:nth-child(5) { animation-delay: 12s; -ms-animation-delay: 12s; -webkit-animation-delay: 12s; }
 
+.slidingVertical span:nth-child(6) { animation-delay: 15s; -ms-animation-delay: 15s; -webkit-animation-delay: 15s; }
+
 /* Content */
 #content { min-height: 500px; }
 

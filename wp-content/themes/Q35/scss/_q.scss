@@ -120,6 +120,12 @@ header {
     -webkit-animation-delay: 12s;
 }
 
+.slidingVertical span:nth-child(6) {
+    animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    -webkit-animation-delay: 15s;
+}
+
 /* Content */
 #content {
     min-height: 500px;

@@ -20,12 +20,12 @@ get_header(); ?>
     <section id="timeline">
         <div class="row">
             <div class="column">
-                <div class="row align-center">
-                    <div class="column small-6">
-                        <h2><?php echo get_the_title(20); ?></h2>
-                        <?php echo apply_filters('the_content', get_post_field('post_content', 20)); ?>
-                    </div>
+                <div class="row align-center medium-collapse">
+                <div class="column large-6 medium-10">
+                    <h2><?php echo get_the_title(20); ?></h2>
+                    <?php echo apply_filters('the_content', get_post_field('post_content', 20)); ?>
                 </div>
+            </div>
                 <div class="timeline">
                 <?php $c=0; $r=0; while(have_rows('timeline_content', 20)): the_row(); $c++; $r++; ?>
                      <div class="column entry-<?php echo $c; ?>">

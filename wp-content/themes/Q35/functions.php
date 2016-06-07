@@ -8,7 +8,7 @@
  */
 
 //Additional Media Library Sizes
-//add_image_size( 'slider', 0, 580, true );
+add_image_size( 'gallery', 900, 0, false);
 
 
 if ( ! function_exists( '_q_setup' ) ) :

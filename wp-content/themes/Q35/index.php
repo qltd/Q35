@@ -61,7 +61,7 @@ get_header(); ?>
                 <div class="slide">
                 <?php while(have_rows('gallery', 22)): the_row(); $r++; $img = get_sub_field('image'); ?>
                     <?php if ($r==1):?><div class="img-row"><?php endif; ?>
-                    <div style="background: url(<?php echo $img['url']; ?>) no-repeat center center; background-size: cover;"></div>
+                    <div style="background: url(<?php echo $img['sizes']['gallery']; ?>) no-repeat center center; background-size: cover;"></div>
                     <?php if ($r==3): ?></div><?php $r=0; endif;  ?>
                 <?php endwhile; ?>
                 </div>

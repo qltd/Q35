@@ -23,7 +23,7 @@
 
                     <div class="column small-12 medium-5 large-4">
                         <ul class="social-icons">
-                            <li><a href="https://www.facebook.com/QQview" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/QLTDdesign" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://plus.google.com/109152261638729886652" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="https://twitter.com/qltd" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="http://www.flickr.com/photos/28113117@N04/" target="_blank"><i class="fa fa-flickr"></i></a></li>

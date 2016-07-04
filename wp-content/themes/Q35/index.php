@@ -103,7 +103,7 @@ get_header(); ?>
         <div class="column large-6 medium-10">
             <h2><?php echo get_the_title(27); ?></h2>
                         <?php echo apply_filters('the_content', get_post_field('post_content', 27)); ?>
-                        <p><a href="mailto:matt@qltd.com?subject=Q Share a Memory&body=Hello"><strong>Share a memory ></strong></a></p>
+                        <p><a href="mailto:info@qltd.com?subject=Q Share a Memory&body="><strong>Share a memory ></strong></a></p>
         </div>
     </div>
     <div class="row align-center people">
@@ -126,6 +126,7 @@ get_header(); ?>
         <div class="column large-6 medium-10">
             <h2><?php echo get_the_title(29); ?></h2>
                 <?php echo apply_filters('the_content', get_post_field('post_content', 29)); ?>
+                <p><a href="mailto:info@qltd.com?subject=Q Share a Memory&body="><strong>Share a memory ></strong></a></p>
         </div>
     </div>
     <div class="row align-center people">

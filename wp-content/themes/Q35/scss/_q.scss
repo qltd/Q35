@@ -53,7 +53,7 @@ header {
     margin: 0 2rem 0 0;
     max-width: 450px;
     height: 300px;
-    width: 100%;
+    width: 50%;
     position: relative;
     overflow: hidden;
 
@@ -852,40 +852,6 @@ footer {
 
 /* Header Animation */
 /*topToBottom Animation*/
-@-moz-keyframes topToBottom {
-    0% {
-        opacity: 0;
-    }
-
-    5% {
-        opacity: 0;
-        -moz-transform: translateY(-50px);
-    }
-
-    13% {
-        opacity: 1;
-        -moz-transform: translateY(0px);
-    }
-
-    25% {
-        opacity: 1;
-        -moz-transform: translateY(0px);
-    }
-
-    30% {
-        opacity: 0;
-        -moz-transform: translateY(50px);
-    }
-
-    80% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 @-webkit-keyframes topToBottom {
     0% {
         opacity: 0;
@@ -920,29 +886,29 @@ footer {
     }
 }
 
-@-ms-keyframes topToBottom {
+@keyframes topToBottom {
     0% {
         opacity: 0;
     }
 
-    5% {
+    8% {
         opacity: 0;
-        -ms-transform: translateY(-50px);
+        transform: translateY(-50px);
     }
 
-    10% {
+    12% {
         opacity: 1;
-        -ms-transform: translateY(0px);
+        transform: translateY(0px);
     }
 
     25% {
         opacity: 1;
-        -ms-transform: translateY(0px);
+        transform: translateY(0px);
     }
 
     30% {
         opacity: 0;
-        -ms-transform: translateY(50px);
+        transform: translateY(50px);
     }
 
     80% {

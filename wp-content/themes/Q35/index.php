@@ -154,7 +154,7 @@ get_header(); ?>
                         </div>
                         <h2><?php echo get_the_title(31); ?></h2>
                         <?php echo apply_filters('the_content', get_post_field('post_content', 31)); ?>
-                        <p><a href="mailto:info@qltd.com?subject=Q 35 Party RSVP&body=">Let us know you're coming ></a></p>
+                        <p><a href="mailto:info@qltd.com?subject=Q 35 Party RSVP&body=I will be attending the Q35 Open House!">Let us know you're coming ></a></p>
                     </div>
     </div>
 </section>

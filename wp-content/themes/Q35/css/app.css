@@ -994,6 +994,8 @@ section p { font-family: "adelle", serif; font-style: italic; font-size: 2.3rem;
 
 #party #party-info > div { background: rgba(255, 255, 255, 0.8); box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8); max-width: 600px; padding: 20px; }
 
+#party #party-info a { color: #DA7286; }
+
 #party .section-icon { width: 165px; height: 165px; margin: 0 auto 4rem; background: url(../img/35-circle-1986.png) no-repeat top left/cover; }
 
 #party .section-icon i { width: 30%; height: 100%; background: url(../img/wine-35-party.svg) no-repeat center center; }
